@@ -100,7 +100,7 @@ void isr()
 			LATB |= ((RXB0D1 & 0b10000000) >> 3);
 			// RB5 - RB7
 			LATB |= ((RXB0D2 & 0b00000111) << 5);
-			// RC0 - RC5
+			// RC0 - RC4
 			LATC = RXB0D2 >> 3;
 			break;
 		}
