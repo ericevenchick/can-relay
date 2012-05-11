@@ -103,6 +103,13 @@ void isr()
 			// RC0 - RC5
 			LATC = RXB0D2 >> 3;
 			break;
+		// cmd 0x2: sleep
+		case 0x2:
+			LATA = 0;
+			LATB = 0;
+			LATC = 0;
+			_asm sleep _endasm
+			break;
 		}
 		
 		CANTx(0xA3, 8, (PORTA&0b00111111),
