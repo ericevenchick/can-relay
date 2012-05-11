@@ -7,6 +7,7 @@ CAN Frame structure:
 * Byte 1: Command
   * 0 = read status
   * 1 = set status
+  * 2 = sleep
 * Byte 2: (LSB) RA0 - RA3, RA5, RB0, RB1 (MSB)
 * Byte 3: (LSB) RB5 - RB7, RC0 - RC4 (MSB)
 
